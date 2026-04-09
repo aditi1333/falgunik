@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>my thoughts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d0d0d;
+      color: #eaeaea;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 2rem 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #ccc;
+    }
+
+    nav a {
+      color: #777;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover { color: #fff; }
+
+    .hero {
+      height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 12%;
+    }
+
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 550px;
+      color: #aaa;
+      font-size: 1rem;
+    }
+
+    .btn {
+      margin-top: 2rem;
+      padding: 0.7rem 1.6rem;
+      border: 1px solid #aaa;
+      color: #aaa;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #fff;
+      color: #000;
+      border-color: #fff;
+    }
+
+    .section {
+      padding: 4rem 12%;
+    }
+
+    .section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      padding: 1.3rem;
+      border: 1px solid #1a1a1a;
+      background: #111;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: #444;
+      transform: translateY(-4px);
+    }
+
+    .card h4 {
+      margin-bottom: 0.6rem;
+      font-weight: 400;
+    }
+
+    .card p {
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #555;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>my mind</h1>
+    <nav>
+      <a href="#">home</a>
+      <a href="#">thoughts</a>
+      <a href="#">about</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>just things i couldn’t keep inside my head.</h2>
+    <p>
+      i write what i think.<br>
+      sometimes it makes sense.<br>
+      sometimes it doesn’t.<br>
+      but it’s real.
+    </p>
+    <a href="#" class="btn">read my thoughts</a>
+  </section>
+
+  <section class="section">
+    <h3>recent thoughts</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>overthinking at 2am</h4>
+        <p>i don’t know why my brain chooses this time to remember everything</p>
+      </div>
+      <div class="card">
+        <h4>people change</h4>
+        <p>or maybe we just notice it late</p>
+      </div>
+      <div class="card">
+        <h4>unfinished sentences</h4>
+        <p>some thoughts don’t need endings</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    still figuring things out.
+  </footer>
+
+</body>
+</html>
